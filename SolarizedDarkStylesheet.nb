@@ -1,0 +1,289 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9927,        280]
+NotebookOptionsPosition[      7656,        234]
+NotebookOutlinePosition[      8085,        250]
+CellTagsIndexPosition[      8042,        247]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[StyleData[StyleDefinitions -> "Core.nb"]],
+
+Cell[StyleData[All],
+ CellMargins->{{25, Inherited}, {5, 10}},
+ CellBracketOptions->{"Color"->RGBColor[0.5215686274509804, 0.6, 0.],
+ "HoverColor"->RGBColor[
+  0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]},
+ AutoStyleOptions->{
+ "CommentStyle"->{
+  FontColor ->
+   RGBColor[0.5764705882352941, 0.6313725490196078, 0.6313725490196078]},
+ "EmphasizedSyntaxErrorStyle"->{
+  FontColor ->
+   RGBColor[0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]},
+ "ExcessArgumentStyle"->{
+  FontColor ->
+   RGBColor[0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]},
+ "FormattingErrorStyle"->{
+  FontColor ->
+   RGBColor[0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]},
+ "FunctionLocalVariableStyle"->{
+  FontColor -> RGBColor[0.5215686274509804, 0.6, 0.]},
+ "GlobalToLocalScopeConflictStyle"->{
+  FontColor ->
+   RGBColor[0.796078431372549, 0.29411764705882354`, 0.08627450980392157]},
+ "GraphicsCompatibilityProblemStyle"->{
+  FontColor ->
+   RGBColor[0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]},
+ "LocalVariableStyle"->{
+  FontColor ->
+   RGBColor[0.14901960784313725`, 0.5450980392156862, 0.8235294117647058]},
+ "MissingArgumentStyle"->{
+  FontColor ->
+   RGBColor[0.8627450980392157, 0.19607843137254902`, 0.1843137254901961],
+   FontWeight -> Bold},
+ "MissingArgumentTemplateStyle"->{
+  FontColor ->
+   RGBColor[0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]},
+ "MisspelledWordStyle"->{
+  FontColor ->
+   RGBColor[0.796078431372549, 0.29411764705882354`, 0.08627450980392157],
+   Underlined},
+ "NoKernelPresentStyle"->{
+  FontColor ->
+   RGBColor[0.34509803921568627`, 0.43137254901960786`, 0.4588235294117647]},
+ "OrderOfEvaluationConflictStyle"->{
+  FontColor ->
+   RGBColor[0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]},
+ "PatternVariableStyle"->{FontColor -> RGBColor[0.5215686274509804, 0.6, 0.]},
+
+ "StringStyle"->{
+  FontColor ->
+   RGBColor[0.8274509803921568, 0.21176470588235294`, 0.5098039215686274]},
+ "SymbolShadowingStyle"->{
+  FontColor ->
+   RGBColor[0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]},
+ "SyntaxErrorStyle"->{
+  FontColor ->
+   RGBColor[0.796078431372549, 0.29411764705882354`, 0.08627450980392157]},
+ "UndefinedSymbolStyle"->{
+  FontColor -> RGBColor[0.7098039215686275, 0.5372549019607843, 0.]},
+ "UnknownOptionStyle"->{
+  FontColor ->
+   RGBColor[0.796078431372549, 0.29411764705882354`, 0.08627450980392157]},
+ "UnwantedAssignmentStyle"->{
+  FontColor ->
+   RGBColor[0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]}},
+ CodeAssistOptions->{
+ "HeadHighlightStyle"->{
+  FontColor -> RGBColor[0.5215686274509804, 0.6, 0.], FontWeight -> Bold},
+ "MatchHighlightStyle"->{
+  FontColor -> RGBColor[0.5215686274509804, 0.6, 0.], FontWeight -> Bold},
+ "PrimaryHoverColor"->RGBColor[
+  0.16470588235294117`, 0.6313725490196078, 0.596078431372549]},
+ FontFamily->"Roboto",
+ FontSize->14,
+ FontColor->RGBColor[
+  0.5764705882352941, 0.6313725490196078, 0.6313725490196078],
+ PanelBoxOptions->{
+ Background->RGBColor[
+  0.027450980392156862`, 0.21176470588235294`, 0.25882352941176473`]},
+ AutoStyleOptions -> {
+  "LocalScoleConflictStyle" -> {
+    FontColor ->
+     RGBColor[0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]}}],
+
+Cell[StyleData["Notebook"],
+ Background->RGBColor[0., 0.16862745098039217`, 0.21176470588235294`]],
+
+Cell[StyleData["Title"],
+ MenuSortingValue->1100,
+ FontFamily->"EB Garamond SC"],
+
+Cell[StyleData["Subtitle"],
+ CellMargins->{{10, Inherited}, {16, 8}},
+ StyleKeyMapping->{"Tab" -> "Subsubtitle"},
+ PageBreakBelow->False,
+ LineSpacing->{1, 4},
+ CounterAssignments->{{"Subsubtitle", 0}},
+ MenuSortingValue->1550,
+ FontFamily->"EB Garamond SC",
+ FontSize->60,
+ FontColor->RGBColor[
+  0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]],
+
+Cell[StyleData["Subsubtitle"],
+ CellMargins->{{15, Inherited}, {20, 10}},
+ StyleKeyMapping->{"Tab" -> "Title"},
+ PageBreakBelow->False,
+ LineSpacing->{1, 4},
+ MenuSortingValue->1555,
+ FontFamily->"EB Garamond SC",
+ FontSize->48,
+ FontColor->RGBColor[
+  0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]],
+
+Cell[StyleData["Chapter"],
+ CellMargins->{{5, Inherited}, {20, 10}},
+ PageBreakBelow->False,
+ MenuCommandKey->2,
+ FontFamily->"EB Garamond SC",
+ FontSize->72,
+ FontColor->RGBColor[
+  0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]],
+
+Cell[StyleData["Subchapter"],
+ CellMargins->{{10, Inherited}, {15, 7.5}},
+ PageBreakBelow->False,
+ FontFamily->"EB Garamond SC",
+ FontSize->60,
+ FontColor->RGBColor[
+  0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]],
+
+Cell[StyleData["Section"],
+ CellMargins->{{5, Inherited}, {20, 10}},
+ StyleKeyMapping->{"Tab" -> "Subsection"},
+ PageBreakBelow->False,
+ MenuCommandKey->2,
+ FontFamily->"EB Garamond SC",
+ FontSize->60,
+ FontColor->RGBColor[
+  0.796078431372549, 0.29411764705882354`, 0.08627450980392157]],
+
+Cell[StyleData["Subsection"],
+ CellMargins->{{10, Inherited}, {16, 8}},
+ StyleKeyMapping->{"Tab" -> "Subsubsection"},
+ PageBreakBelow->False,
+ FontFamily->"EB Garamond",
+ FontSize->60,
+ FontColor->RGBColor[
+  0.796078431372549, 0.29411764705882354`, 0.08627450980392157]],
+
+Cell[StyleData["Subsubsection"],
+ CellMargins->{{15, Inherited}, {12, 6}},
+ StyleKeyMapping->{"Tab" -> "Section"},
+ PageBreakBelow->False,
+ FontFamily->"EB Garamond",
+ FontSize->60,
+ FontColor->RGBColor[
+  0.796078431372549, 0.29411764705882354`, 0.08627450980392157]],
+
+Cell[StyleData["Input"],
+ CellMargins->{{50, Inherited}, {10, 5}},
+ FontFamily->"Inconsolata g",
+ FontWeight->Plain,
+ Background->RGBColor[
+  0.027450980392156862`, 0.21176470588235294`, 0.25882352941176473`]],
+
+Cell[StyleData["Output"],
+ CellFrame->{{1, 1}, {1, 1}},
+ CellMargins->{{50, Inherited}, {10, -10}},
+ CellFrameColor->RGBColor[
+  0.5764705882352941, 0.6313725490196078, 0.6313725490196078],
+ FontFamily->"Inconsolata g",
+ FontWeight->Plain,
+ Background->RGBColor[
+  0.027450980392156862`, 0.21176470588235294`, 0.25882352941176473`]],
+
+Cell[StyleData["Text"],
+ CellMargins->{{25, Inherited}, {Inherited, Inherited}}],
+
+Cell[StyleData["Item"],
+ CellMargins->{{40, Inherited}, {Inherited, Inherited}}],
+
+Cell[StyleData["Subitem"],
+ CellMargins->{{55, Inherited}, {Inherited, Inherited}}],
+
+Cell[StyleData["Subsubitem"],
+ CellMargins->{{70, Inherited}, {Inherited, Inherited}}],
+
+Cell[StyleData["ItemParagraph"],
+ CellMargins->{{40, Inherited}, {Inherited, Inherited}}],
+
+Cell[StyleData["SubitemParagraph"],
+ CellMargins->{{55, Inherited}, {Inherited, Inherited}}],
+
+Cell[StyleData["SubsubitemParagraph"],
+ CellMargins->{{70, Inherited}, {Inherited, Inherited}}],
+
+Cell[StyleData["ItemNumbered"],
+ CellMargins->{{40, Inherited}, {Inherited, Inherited}}],
+
+Cell[StyleData["SubitemNumbered"],
+ CellMargins->{{55, Inherited}, {Inherited, Inherited}}],
+
+Cell[StyleData["SubsubitemNumbered"],
+ CellMargins->{{70, Inherited}, {Inherited, Inherited}}],
+
+Cell[StyleData["InlineFormula"]],
+
+Cell[StyleData["DisplayFormula"]],
+
+Cell[StyleData["Program"]]
+},
+WindowSize->{2556, 491},
+WindowMargins->{{0, Automatic}, {Automatic, 971}},
+Background->RGBColor[0., 0.16862745098039217`, 0.21176470588235294`],
+FrontEndVersion->"10.3 for Linux x86 (64-bit) (December 10, 2015)",
+StyleDefinitions->"PrivateStylesheetFormatting.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 46, 0, 84, 46, 0, "StyleData", "StyleDefinitions", ""],
+Cell[607, 22, 3308, 82, 84, 20, 0, "StyleData", "All", "All"],
+Cell[3918, 106, 98, 1, 84, 27, 0, "StyleData", "Notebook", "All"],
+Cell[4019, 109, 80, 2, 80, 24, 0, "StyleData", "Title", "All",
+ MenuSortingValue->1100],
+Cell[4102, 113, 360, 10, 190, 27, 0, "StyleData", "Subtitle", "All",
+ CounterAssignments->{{"Subsubtitle", 0}},
+ MenuSortingValue->1550],
+Cell[4465, 125, 315, 9, 178, 30, 0, "StyleData", "Subsubtitle", "All",
+ MenuSortingValue->1555],
+Cell[4783, 136, 245, 7, 227, 26, 0, "StyleData", "Chapter", "All",
+ MenuCommandKey->2],
+Cell[5031, 145, 230, 6, 140, 29, 0, "StyleData", "Subchapter", "All"],
+Cell[5264, 153, 288, 8, 140, 26, 0, "StyleData", "Section", "All",
+ MenuCommandKey->2],
+Cell[5555, 163, 271, 7, 140, 29, 0, "StyleData", "Subsection", "All"],
+Cell[5829, 172, 268, 7, 140, 32, 0, "StyleData", "Subsubsection", "All"],
+Cell[6100, 181, 209, 5, 140, 24, 0, "StyleData", "Input", "All"],
+Cell[6312, 188, 332, 8, 140, 25, 0, "StyleData", "Output", "All"],
+Cell[6647, 198, 80, 1, 140, 23, 0, "StyleData", "Text", "All"],
+Cell[6730, 201, 80, 1, 140, 23, 0, "StyleData", "Item", "All"],
+Cell[6813, 204, 83, 1, 140, 26, 0, "StyleData", "Subitem", "All"],
+Cell[6899, 207, 86, 1, 140, 29, 0, "StyleData", "Subsubitem", "All"],
+Cell[6988, 210, 89, 1, 140, 32, 0, "StyleData", "ItemParagraph", "All"],
+Cell[7080, 213, 92, 1, 140, 35, 0, "StyleData", "SubitemParagraph", "All"],
+Cell[7175, 216, 95, 1, 140, 38, 0, "StyleData", "SubsubitemParagraph", \
+"All"],
+Cell[7273, 219, 88, 1, 140, 31, 0, "StyleData", "ItemNumbered", "All"],
+Cell[7364, 222, 91, 1, 140, 34, 0, "StyleData", "SubitemNumbered", "All"],
+Cell[7458, 225, 94, 1, 140, 37, 0, "StyleData", "SubsubitemNumbered", "All"],
+Cell[7555, 228, 32, 0, 140, 32, 0, "StyleData", "InlineFormula", "All"],
+Cell[7590, 230, 33, 0, 140, 33, 0, "StyleData", "DisplayFormula", "All"],
+Cell[7626, 232, 26, 0, 140, 26, 0, "StyleData", "Program", "All"]
+}
+]
+*)
+
+(* End of internal cache information *)
